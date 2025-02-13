@@ -1,0 +1,111 @@
+.innerContainer {
+    position: relative;
+    width: 50vw;
+    height: 50px;
+    border-radius: 20px;
+    padding: 45px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 50px;
+    width: 25vw;
+    border: none;
+    outline: none;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.submitBtn {
+    margin-left: 20px;
+    width: 8vw;
+    padding: 10px;
+    color: white;
+    margin-top: 20px;
+    background: #1DA1F2;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+}
+
+.submitBtn:hover {
+    box-shadow: none;
+}
+
+.ulContainer {
+    border-radius: 20px;
+    padding: 45px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* For tablets */
+@media (max-width: 768px) {
+    .innerContainer {
+        width: 70vw;
+        padding: 40px;
+    }
+
+    input {
+        width: 30vw;
+        margin-bottom: 15px;
+    }
+
+    .submitBtn {
+        width: 15vw;
+    }
+
+    .ulContainer {
+        padding: 30px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .innerContainer {
+        width: 90vw;
+        padding: 20px;
+        height: auto;
+        flex-direction: row;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    input {
+        width: 50vw;
+        margin-bottom: 10px;
+    }
+
+    .submitBtn {
+        width: 15vw;
+        margin-left: 5px;
+    }
+
+    .ulContainer {
+        padding: 20px;
+    }
+}
